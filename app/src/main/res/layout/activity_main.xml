@@ -136,6 +136,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
                 android:background="@android:color/black" />
+
         </RelativeLayout>
 
         <!-- Question 3:  Robert Goddard -->
@@ -201,16 +202,13 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/black" />
 
-
         </RelativeLayout>
 
-
+        <!-- Question 4:  ML King -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-            <!-- Question 4:  ML King -->
             <!--IMAGE:  ML King -->
             <ImageView
                 android:id="@+id/martin_luther_king"
@@ -269,16 +267,13 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/black" />
 
-
         </RelativeLayout>
 
-
+        <!-- Question 5:  Dr. Seuss -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-            <!-- Question 5:  Dr. Seuss -->
             <!--IMAGE:  Dr. Seuss -->
             <ImageView
                 android:id="@+id/doctor_seuss"
@@ -337,16 +332,13 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/black" />
 
-
         </RelativeLayout>
 
-
+        <!-- Question 6:  Rhode Island -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-            <!-- Question 6:  Rhode Island -->
             <!--IMAGE:  Rhode Island -->
             <ImageView
                 android:id="@+id/roger_williams"
@@ -405,10 +397,8 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/black" />
 
-
         </RelativeLayout>
 
     </LinearLayout>
-
 
 </ScrollView>

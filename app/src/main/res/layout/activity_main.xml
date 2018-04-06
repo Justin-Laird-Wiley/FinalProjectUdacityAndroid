@@ -10,6 +10,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Your Massachusetts Trivia Quiz! As seen on stamps!"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a trivia quiz about historical events of Massachusetts in the United States, as depicted on US postage stamps."
+            android:textColor="@android:color/black"
+            android:layout_margin="16dp"
+            android:textSize="16sp" />
+
         <!-- Question 1:  Jan Matzeliger -->
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,7 +48,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toRightOf="@id/jan_matzeliger"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine that transformed the
+                shoe industry?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 

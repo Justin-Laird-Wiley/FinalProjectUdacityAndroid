@@ -6,18 +6,20 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <!-- Question 1:  Jan Matzeliger -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
 
             <!--IMAGE:  Jan Matzeliger-->
             <ImageView
                 android:id="@+id/jan_matzeliger"
+                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/jan_matzeliger" />
@@ -64,14 +66,15 @@
                     android:text="Lowell" />
             </RadioGroup>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/jan_matzeliger"
-                android:layout_margin="16dp"
-                android:background="@android:color/black" />
-
         </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/jan_matzeliger"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
 
         <!-- Question 2:  Emily Dickenson -->
         <RelativeLayout
@@ -81,9 +84,10 @@
             <!--IMAGE:  Emily Dickenson -->
             <ImageView
                 android:id="@+id/emily_dickenson"
-                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:src="@drawable/dickenson" />
 
             <TextView
@@ -128,16 +132,15 @@
                     android:text="Lowell" />
             </RadioGroup>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/emily_dickenson"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/black" />
-
         </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/emily_dickenson"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
 
         <!-- Question 3:  Robert Goddard -->
         <RelativeLayout
@@ -147,6 +150,7 @@
             <!--IMAGE:  Robert Goddard -->
             <ImageView
                 android:id="@+id/robert_goddard"
+                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/goddard" />
@@ -155,13 +159,14 @@
                 android:id="@+id/question3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:layout_below="@id/robert_goddard"
+                android:layout_margin="8dp"
                 android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_group_3"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question3"
@@ -193,16 +198,15 @@
                     android:text="Lowell" />
             </RadioGroup>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/robert_goddard"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/black" />
-
         </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/radio_group_3"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
 
         <!-- Question 4:  ML King -->
         <RelativeLayout
@@ -212,9 +216,10 @@
             <!--IMAGE:  ML King -->
             <ImageView
                 android:id="@+id/martin_luther_king"
-                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:src="@drawable/mlking" />
 
             <TextView
@@ -259,16 +264,15 @@
                     android:text="Lowell" />
             </RadioGroup>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/martin_luther_king"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/black" />
-
         </RelativeLayout>
+
+        <!-- Separator-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/martin_luther_king"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
 
         <!-- Question 5:  Dr. Seuss -->
         <RelativeLayout
@@ -278,6 +282,7 @@
             <!--IMAGE:  Dr. Seuss -->
             <ImageView
                 android:id="@+id/doctor_seuss"
+                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/seuss" />
@@ -286,8 +291,8 @@
                 android:id="@+id/question5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:layout_below="@id/doctor_seuss"
+                android:layout_margin="8dp"
                 android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -323,16 +328,15 @@
                     android:text="Lowell" />
             </RadioGroup>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/doctor_seuss"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/black" />
-
         </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/doctor_seuss"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
 
         <!-- Question 6:  Rhode Island -->
         <RelativeLayout
@@ -342,11 +346,11 @@
             <!--IMAGE:  Rhode Island -->
             <ImageView
                 android:id="@+id/roger_williams"
+                android:layout_marginRight="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/roger_williams"
                 android:layout_alignParentRight="true"
-                />
+                android:src="@drawable/roger_williams" />
 
             <TextView
                 android:id="@+id/question6"
@@ -390,16 +394,23 @@
                     android:text="Lowell" />
             </RadioGroup>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_below="@id/roger_williams"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/black" />
-
         </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/roger_williams"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/total_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Score"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
 
     </LinearLayout>
 

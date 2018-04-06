@@ -25,14 +25,23 @@
             android:layout_height="wrap_content"
             android:text="This is a trivia quiz about historical events of Massachusetts in the United States, as depicted on US postage stamps."
             android:textColor="@android:color/black"
-            android:layout_margin="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
             android:textSize="16sp" />
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/doctor_seuss"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
 
         <!-- Question 1:  Jan Matzeliger -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:layout_height="wrap_content">
 
             <!--IMAGE:  Jan Matzeliger-->
             <ImageView

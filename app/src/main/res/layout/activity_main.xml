@@ -10,11 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Question 1:  Jan Matzeliger -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Question 1:  Jan Matzeliger -->
             <!--IMAGE:  Jan Matzeliger-->
             <ImageView
                 android:id="@+id/jan_matzeliger"
@@ -73,12 +73,12 @@
 
         </RelativeLayout>
 
-        <!-- Question 2:  Emily Dickensen -->
+        <!-- Question 2:  Emily Dickenson -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!--IMAGE:  Emily Dickensen -->
+            <!--IMAGE:  Emily Dickenson -->
             <ImageView
                 android:id="@+id/emily_dickenson"
                 android:layout_alignParentRight="true"
@@ -149,14 +149,14 @@
                 android:id="@+id/robert_goddard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/jan_matzeliger" />
+                android:src="@drawable/goddard" />
 
             <TextView
                 android:id="@+id/question3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_toRightOf="@id/robert_goddard"
+                android:layout_below="@id/robert_goddard"
                 android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -212,16 +212,17 @@
             <!--IMAGE:  ML King -->
             <ImageView
                 android:id="@+id/martin_luther_king"
+                android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/jan_matzeliger" />
+                android:src="@drawable/mlking" />
 
             <TextView
                 android:id="@+id/question4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_toRightOf="@id/martin_luther_king"
+                android:layout_toLeftOf="@id/martin_luther_king"
                 android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -230,7 +231,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question4"
-                android:layout_toRightOf="@id/martin_luther_king"
+                android:layout_toLeftOf="@id/martin_luther_king"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -279,14 +280,14 @@
                 android:id="@+id/doctor_seuss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/jan_matzeliger" />
+                android:src="@drawable/seuss" />
 
             <TextView
                 android:id="@+id/question5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_toRightOf="@id/doctor_seuss"
+                android:layout_below="@id/doctor_seuss"
                 android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -295,7 +296,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question5"
-                android:layout_toRightOf="@id/doctor_seuss"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -344,14 +344,16 @@
                 android:id="@+id/roger_williams"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/jan_matzeliger" />
+                android:src="@drawable/roger_williams"
+                android:layout_alignParentRight="true"
+                />
 
             <TextView
                 android:id="@+id/question6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:layout_toRightOf="@id/roger_williams"
+                android:layout_toLeftOf="@id/roger_williams"
                 android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -360,7 +362,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question6"
-                android:layout_toRightOf="@id/roger_williams"
+                android:layout_toLeftOf="@id/roger_williams"
                 android:orientation="vertical">
 
                 <RadioButton

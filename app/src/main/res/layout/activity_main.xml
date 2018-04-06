@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@+id/emily_dickenson"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:text="Emily Dickinson was born and died in what western Massachusetts college town?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -161,7 +161,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/robert_goddard"
                 android:layout_margin="8dp"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:text="Robert Goddard successfully tested the first liquid-fueled rocket in 1926 in what central
+                Massachusetts town?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -170,7 +171,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question3"
-                android:layout_toRightOf="@id/robert_goddard"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -228,7 +228,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@id/martin_luther_king"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:text="Martin Luther King received his doctorate in theology from what Boston area university?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -293,7 +293,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/doctor_seuss"
                 android:layout_margin="8dp"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:text="Dr. Seuss (Theodore Geisel) was born in 1904 in what western Massachusetts city?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -358,7 +358,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@id/roger_williams"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:text="In 1636, following his exile from Massachusetts, Roger Williams founded a new colony on Narragansett Bay that woiuld
+                become Rhode Island.  Why was he kicked out of Massachusetts?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -404,6 +405,7 @@
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
+        <!-- ButtonView to total score of quiz -->
         <Button
             android:id="@+id/total_button"
             android:layout_width="match_parent"

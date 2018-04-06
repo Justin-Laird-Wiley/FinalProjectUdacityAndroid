@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Question 1:  Jan Matzeliger -->
+            <!--IMAGE:  Jan Matzeliger-->
+            <ImageView
+                android:id="@+id/jan_matzeliger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jan_matzeliger" />
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/jan_matzeliger"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1"
+                android:layout_toRightOf="@id/jan_matzeliger"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/lawrence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lawrence" />
+
+                <RadioButton
+                    android:id="@+id/lynn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lynn" />
+
+                <RadioButton
+                    android:id="@+id/lowell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lowell" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/jan_matzeliger"
+                android:layout_margin="16dp"
+                android:background="@android:color/black" />
+
+        </RelativeLayout>
+
+        <!-- Question 2:  Emily Dickensen -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Emily Dickensen -->
+            <ImageView
+                android:id="@+id/emily_dickenson"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dickenson" />
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@+id/emily_dickenson"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2"
+                android:layout_toLeftOf="@id/emily_dickenson"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/amherst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lawrence" />
+
+                <RadioButton
+                    android:id="@+id/northampton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lynn" />
+
+                <RadioButton
+                    android:id="@+id/south_deerfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lowell" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/emily_dickenson"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+        </RelativeLayout>
+
+        <!-- Question 3:  Robert Goddard -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Robert Goddard -->
+            <ImageView
+                android:id="@+id/robert_goddard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jan_matzeliger" />
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/robert_goddard"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question3"
+                android:layout_toRightOf="@id/robert_goddard"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/year_1930"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lawrence" />
+
+                <RadioButton
+                    android:id="@+id/year_1935"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lynn" />
+
+                <RadioButton
+                    android:id="@+id/year_1933"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lowell" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/robert_goddard"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- Question 4:  ML King -->
+            <!--IMAGE:  ML King -->
+            <ImageView
+                android:id="@+id/martin_luther_king"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jan_matzeliger" />
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/martin_luther_king"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question4"
+                android:layout_toRightOf="@id/martin_luther_king"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/harvard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lawrence" />
+
+                <RadioButton
+                    android:id="@+id/boston_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lynn" />
+
+                <RadioButton
+                    android:id="@+id/boston_university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lowell" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/martin_luther_king"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- Question 5:  Dr. Seuss -->
+            <!--IMAGE:  Dr. Seuss -->
+            <ImageView
+                android:id="@+id/doctor_seuss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jan_matzeliger" />
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/doctor_seuss"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question5"
+                android:layout_toRightOf="@id/doctor_seuss"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/springfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lawrence" />
+
+                <RadioButton
+                    android:id="@+id/wocrcester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lynn" />
+
+                <RadioButton
+                    android:id="@+id/new_bedford"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lowell" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/doctor_seuss"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- Question 6:  Rhode Island -->
+            <!--IMAGE:  Rhode Island -->
+            <ImageView
+                android:id="@+id/roger_williams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jan_matzeliger" />
+
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/roger_williams"
+                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question6"
+                android:layout_toRightOf="@id/roger_williams"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/connecticut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lawrence" />
+
+                <RadioButton
+                    android:id="@+id/rhode_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lynn" />
+
+                <RadioButton
+                    android:id="@+id/new_hampshire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Lowell" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/roger_williams"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

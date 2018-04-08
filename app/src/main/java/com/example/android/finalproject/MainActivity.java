@@ -69,62 +69,23 @@ public class MainActivity extends AppCompatActivity {
 
     private int calculateScore() {
 
-        int i = 0;
-        String temp = "";
-        temp = "question" + i;
-//        if (getResources().getBoolean(varId))
-//            i++;
+        int totalScore = 0;
 
-//        int viewId = getResources().getIdentifier(temp,"id", getPackageName());   // Reverse lookup
+        if (question1)
+            totalScore+=1;
+        if (question2)
+            totalScore+=1;
+        if (question3)
+            totalScore+=1;
+        if (question4)
+            totalScore+=1;
+        if (question5)
+            totalScore+=1;
+        if (question6)
+            totalScore+=1;
 
-        String tempId = "";
-        for (i = 0; i < 6; i++) {
-
-            tempId = "question" + i;
-
-
-        }
-
-
-        return 1;
+        return totalScore;
     }
-
-
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        int viewId = view.getId();
-        int idByRClass = R.id.lynn;
-
-//        boolean checked = false;
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.lawrence:
-                if (checked)
-                    // Pirates are the best
-                    break;
-            case R.id.lynn:
-                if (checked)
-                    question1 = true;
-                else
-                    question1 = false;
-                break;
-
-            case R.id.lowell:
-                if (checked)
-                    // Ninjas rule
-                    break;
-
-            case R.id.amherst:
-                if (checked)
-                    // Ninjas rule
-                    question2 = true;
-                break;
-        }
-    }
-
 
     private void findScoreBoxByID(String idToFind) {
         String currentEnd = "current end";
@@ -135,7 +96,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayScore(View view) {
-        Toast.makeText(MainActivity.this, "this is the score",
+
+        int score = 0;
+        score = calculateScore();
+
+
+        Toast.makeText(MainActivity.this, "Your score is:  " + score,
                 Toast.LENGTH_LONG).show();
     }
 }

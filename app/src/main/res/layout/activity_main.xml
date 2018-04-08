@@ -74,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
+                    android:onClick="checkCorrect"
                     android:text="Lawrence" />
 
                 <RadioButton
@@ -82,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
+                    android:onClick="checkCorrect"
                     android:text="Lynn" />
 
                 <RadioButton
@@ -90,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
+                    android:onClick="checkCorrect"
                     android:text="Lowell" />
             </RadioGroup>
 
@@ -140,24 +140,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lawrence" />
+                    android:onClick="checkCorrect"
+                    android:text="Amherst" />
 
                 <RadioButton
                     android:id="@+id/northampton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lynn" />
+                    android:onClick="checkCorrect"
+                    android:text="Northampton" />
 
                 <RadioButton
-                    android:id="@+id/south_deerfield"
+                    android:id="@+id/south_hadley"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lowell" />
+                    android:onClick="checkCorrect"
+                    android:text="South Hadley" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -202,28 +202,28 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/year_1930"
+                    android:id="@+id/year_1926"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lawrence" />
-
-                <RadioButton
-                    android:id="@+id/year_1935"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lynn" />
+                    android:onClick="checkCorrect"
+                    android:text="1926" />
 
                 <RadioButton
                     android:id="@+id/year_1933"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lowell" />
+                    android:onClick="checkCorrect"
+                    android:text="1933" />
+
+                <RadioButton
+                    android:id="@+id/year_1940"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="1940" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -272,24 +272,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lawrence" />
+                    android:onClick="checkCorrect"
+                    android:text="Harvard" />
 
                 <RadioButton
                     android:id="@+id/boston_college"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lynn" />
+                    android:onClick="checkCorrect"
+                    android:text="Boston College" />
 
                 <RadioButton
                     android:id="@+id/boston_university"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lowell" />
+                    android:onClick="checkCorrect"
+                    android:text="Boston University" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -321,7 +321,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/doctor_seuss"
                 android:layout_margin="8dp"
-                android:text="Dr. Seuss (Theodore Geisel) was born in 1904 in what western Massachusetts city?"
+                android:text="Dr. Seuss (Theodore Geisel) was born in 1904 in what Massachusetts city?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
@@ -336,24 +336,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lawrence" />
+                    android:onClick="checkCorrect"
+                    android:text="Springfield" />
 
                 <RadioButton
                     android:id="@+id/wocrcester"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lynn" />
+                    android:onClick="checkCorrect"
+                    android:text="Worcester" />
 
                 <RadioButton
-                    android:id="@+id/new_bedford"
+                    android:id="@+id/pittsfield"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lowell" />
+                    android:onClick="checkCorrect"
+                    android:text="Pittsfield" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -366,12 +366,12 @@
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
-        <!-- Question 6:  Rhode Island -->
+        <!-- Question 6:  Roger Williams -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!--IMAGE:  Rhode Island -->
+            <!--IMAGE:  Roger Williams -->
             <ImageView
                 android:id="@+id/roger_williams"
                 android:layout_marginRight="8dp"
@@ -399,28 +399,28 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/connecticut"
+                    android:id="@+id/plagarism"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lawrence" />
+                    android:onClick="checkCorrect"
+                    android:text="Plagarism" />
 
                 <RadioButton
-                    android:id="@+id/rhode_island"
+                    android:id="@+id/unpaid_taxes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lynn" />
+                    android:onClick="checkCorrect"
+                    android:text="Failure to pay taxes" />
 
                 <RadioButton
-                    android:id="@+id/new_hampshire"
+                    android:id="@+id/religious_liberty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Lowell" />
+                    android:onClick="checkCorrect"
+                    android:text="Religious Liberty" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -429,7 +429,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/roger_williams"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 

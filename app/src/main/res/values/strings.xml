@@ -2,9 +2,11 @@
     <string name="app_name">FinalProject</string>
 
     <!-- Title strings -->
-    <string name="title">Your Massachusetts Trivia Quiz! As seen on stamps!</string>
-    <string name="subtitle">This is a trivia quiz about historical events of
-        Massachusetts in the United States, as depicted on US postage stamps.</string>
+    <string name="title">History through stamps!</string>
+    <string name="subtitle">This is a trivia quiz about historical events, as depicted on US postage
+        stamps, that occurred in the state of Massachusetts in the United States.\n  After each
+        question, select the button next to the answer you think is correct; then click the Total
+        Score button at the end to have your score displayed in a pop-up message.</string>
 
     <!-- Question strings -->
     <string name="questionOne">In what Massachusetts factory city did Jan Matzeliger develop his
@@ -37,7 +39,7 @@
     <string name="year_1933">1933</string>
     <string name="year_1940">1940</string>
     <!-- question4 -->
-    <string name="harvard">Harvard</string>
+    <string name="harvard">Harvard University</string>
     <string name="boston_college">Boston College</string>
     <string name="boston_university">Boston University</string>
 
@@ -53,7 +55,5 @@
 
     <!-- Total Score button -->
     <string name="total_score">Total Score</string>
-
-
 
 </resources>

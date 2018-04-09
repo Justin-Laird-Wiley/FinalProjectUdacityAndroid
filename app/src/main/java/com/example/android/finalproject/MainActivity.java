@@ -3,10 +3,14 @@ package com.example.android.finalproject;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
 
     //  Boolean values for each question:  false for incorrect; true for correct.
     //  All variables set to false initially.
@@ -73,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Method to calculate the number of correct answers.  Called by "displayScore" when the
      * "Total Score" button is pressed at the end of the quiz.   Tests if the boolean for each
-     * question - "questionX" is true, and if true adds 1 to "totalScore".
+     * question - "questionX" - is true, and if true adds 1 to "totalScore".
      *
      * @return int total score -- the number of correct answers
      */
@@ -106,7 +110,9 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(View view) {
         int finalScore;
 
+        //  Call method to calculate number of correct answers
         finalScore = calculateScore();
+        // Toast to display final score
         Toast.makeText(MainActivity.this, "Your score is:  " + finalScore,
                 Toast.LENGTH_LONG).show();
     }

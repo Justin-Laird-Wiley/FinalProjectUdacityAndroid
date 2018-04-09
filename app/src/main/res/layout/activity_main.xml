@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="contentDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,28 +14,27 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:gravity="center_horizontal"
-            android:text="Your Massachusetts Trivia Quiz! As seen on stamps!"
-            android:textSize="24sp"
-            android:textColor="@android:color/black"
+            android:text="@string/title"
             android:textAllCaps="true"
-            android:layout_margin="8dp" />
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is a trivia quiz about historical events of Massachusetts in the United States, as depicted on US postage stamps."
-            android:textColor="@android:color/black"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
+            android:text="@string/subtitle"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <!-- Separator -->
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/doctor_seuss"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
@@ -46,22 +46,23 @@
             <!--IMAGE:  Jan Matzeliger-->
             <ImageView
                 android:id="@+id/jan_matzeliger"
-                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/jan_matzeliger" />
 
+            <!-- TEXT:  of question1 -->
             <TextView
                 android:id="@+id/question1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toRightOf="@id/jan_matzeliger"
-                android:text="In what Massachusetts factory city did Jan Matzeliger develop his shoe-lasting machine that transformed the
-                shoe industry?"
+                android:text="@string/questionOne"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- Radio group for Question1 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -69,29 +70,32 @@
                 android:layout_toRightOf="@id/jan_matzeliger"
                 android:orientation="vertical">
 
+                <!-- Lawrence -->
                 <RadioButton
                     android:id="@+id/lawrence"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Lawrence" />
+                    android:text="@string/lawrence" />
 
+                <!-- Lynn -->
                 <RadioButton
                     android:id="@+id/lynn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Lynn" />
+                    android:text="@string/lynn" />
 
+                <!-- Lowell -->
                 <RadioButton
                     android:id="@+id/lowell"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Lowell" />
+                    android:text="@string/lowell" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -100,7 +104,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/jan_matzeliger"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
@@ -112,22 +115,24 @@
             <!--IMAGE:  Emily Dickenson -->
             <ImageView
                 android:id="@+id/emily_dickenson"
-                android:layout_marginRight="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/dickenson" />
 
+            <!-- TEXT:  of question2 -->
             <TextView
                 android:id="@+id/question2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@+id/emily_dickenson"
-                android:text="Emily Dickinson was born and died in what western Massachusetts college town?"
+                android:text="@string/questionTwo"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- Radio group for question2 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -135,29 +140,32 @@
                 android:layout_toLeftOf="@id/emily_dickenson"
                 android:orientation="vertical">
 
+                <!-- Amherst -->
                 <RadioButton
                     android:id="@+id/amherst"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Amherst" />
+                    android:text="@string/amherst" />
 
+                <!-- Northampton -->
                 <RadioButton
                     android:id="@+id/northampton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Northampton" />
+                    android:text="@string/northampton" />
 
+                <!-- South Hadley -->
                 <RadioButton
                     android:id="@+id/south_hadley"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="South Hadley" />
+                    android:text="@string/south_hadley" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -166,7 +174,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/emily_dickenson"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
@@ -178,22 +185,23 @@
             <!--IMAGE:  Robert Goddard -->
             <ImageView
                 android:id="@+id/robert_goddard"
-                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/goddard" />
 
+            <!-- TEXT:  of question3 -->
             <TextView
                 android:id="@+id/question3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/robert_goddard"
                 android:layout_margin="8dp"
-                android:text="Robert Goddard successfully tested the first liquid-fueled rocket in 1926 in what central
-                Massachusetts town?"
+                android:text="@string/questionThree"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- Radio group for question3 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/radio_group_3"
                 android:layout_width="fill_parent"
@@ -201,29 +209,32 @@
                 android:layout_below="@id/question3"
                 android:orientation="vertical">
 
+                <!-- 1926 -->
                 <RadioButton
                     android:id="@+id/year_1926"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="1926" />
+                    android:text="@string/year_1926" />
 
+                <!-- 1933 -->
                 <RadioButton
                     android:id="@+id/year_1933"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="1933" />
+                    android:text="@string/year_1933" />
 
+                <!-- 1940 -->
                 <RadioButton
                     android:id="@+id/year_1940"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="1940" />
+                    android:text="@string/year_1940" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -232,7 +243,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/radio_group_3"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
@@ -244,22 +254,24 @@
             <!--IMAGE:  ML King -->
             <ImageView
                 android:id="@+id/martin_luther_king"
-                android:layout_marginRight="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/mlking" />
 
+            <!-- TEXT:  of question4 -->
             <TextView
                 android:id="@+id/question4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@id/martin_luther_king"
-                android:text="Martin Luther King received his doctorate in theology from what Boston area university?"
+                android:text="@string/questionFour"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- Radio group of question4 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -267,29 +279,32 @@
                 android:layout_toLeftOf="@id/martin_luther_king"
                 android:orientation="vertical">
 
+                <!-- Harvard -->
                 <RadioButton
                     android:id="@+id/harvard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Harvard" />
+                    android:text="@string/harvard" />
 
+                <!-- Boston College -->
                 <RadioButton
                     android:id="@+id/boston_college"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Boston College" />
+                    android:text="@string/boston_college" />
 
+                <!-- Boston University -->
                 <RadioButton
                     android:id="@+id/boston_university"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Boston University" />
+                    android:text="@string/boston_university" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -298,7 +313,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/martin_luther_king"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
@@ -310,50 +324,55 @@
             <!--IMAGE:  Dr. Seuss -->
             <ImageView
                 android:id="@+id/doctor_seuss"
-                android:layout_marginLeft="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/seuss" />
 
+            <!-- TEXT:  of question5 -->
             <TextView
                 android:id="@+id/question5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/doctor_seuss"
                 android:layout_margin="8dp"
-                android:text="Dr. Seuss (Theodore Geisel) was born in 1904 in what Massachusetts city?"
+                android:text="@string/questionFive"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- Radio group of question5 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question5"
                 android:orientation="vertical">
 
+                <!-- Springfield -->
                 <RadioButton
                     android:id="@+id/springfield"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Springfield" />
+                    android:text="@string/springfield" />
 
+                <!-- Worcester -->
                 <RadioButton
                     android:id="@+id/wocrcester"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Worcester" />
+                    android:text="@string/worcester" />
 
+                <!-- Pittsfield -->
                 <RadioButton
                     android:id="@+id/pittsfield"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Pittsfield" />
+                    android:text="@string/pittsfield" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -362,7 +381,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_below="@id/doctor_seuss"
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
@@ -374,23 +392,24 @@
             <!--IMAGE:  Roger Williams -->
             <ImageView
                 android:id="@+id/roger_williams"
-                android:layout_marginRight="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/roger_williams" />
 
+            <!-- TEXT:  of question6 -->
             <TextView
                 android:id="@+id/question6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@id/roger_williams"
-                android:text="In 1636, following his exile from Massachusetts, Roger Williams founded a new colony on Narragansett Bay that woiuld
-                become Rhode Island.  Why was he kicked out of Massachusetts?"
+                android:text="@string/questionSix"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
+            <!-- Radio group of question6 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -398,29 +417,32 @@
                 android:layout_toLeftOf="@id/roger_williams"
                 android:orientation="vertical">
 
+                <!-- Plagarism -->
                 <RadioButton
                     android:id="@+id/plagarism"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Plagarism" />
+                    android:text="@string/plagiarism" />
 
+                <!-- Unpaid taxes -->
                 <RadioButton
                     android:id="@+id/unpaid_taxes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Failure to pay taxes" />
+                    android:text="@string/unpaid_taxes" />
 
+                <!-- Religious liberty -->
                 <RadioButton
                     android:id="@+id/religious_liberty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="Religious Liberty" />
+                    android:text="@string/religious_liberty" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -437,11 +459,11 @@
             android:id="@+id/total_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Total Score"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:onClick="displayScore"
+            android:text="@string/total_score"
             android:textColor="@android:color/black"
             android:textSize="24sp" />
 

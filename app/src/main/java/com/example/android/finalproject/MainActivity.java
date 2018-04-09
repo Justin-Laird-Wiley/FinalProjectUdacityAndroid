@@ -10,6 +10,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
+    //  Boolean values for each question:  false for incorrect; true for correct.
+    //  All variables set to false initially.
     boolean question1 = false;
     boolean question2 = false;
     boolean question3 = false;
@@ -23,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * This method performs an "if-else" statement on each question to see if the correct
+     * radio button was clicked.  The "if" part will set a boolean value to true for a
+     * correct answer, and the "else" part will set the boolean to false if either of the
+     * incorrect answers are checked.  Called whenever a radio button is clicked.
+     *
+     * @param view
+     */
     public void checkCorrect(View view) {
-
-        boolean thisTemp = false;
 
         // check question 1
         if (view.getId() == R.id.lynn)
@@ -64,44 +72,44 @@ public class MainActivity extends AppCompatActivity {
             question6 = false;
     }
 
-
-
-
+    /**
+     * Method to calculate the number of correct answers.  Called by "displayScore" when the
+     * "Total Score" button is pressed at the end of the quiz.   Tests if the boolean for each
+     * question - "questionX" is true, and if true adds 1 to "totalScore".
+     *
+     * @return int total score -- the number of correct answers
+     */
     private int calculateScore() {
-
         int totalScore = 0;
 
         if (question1)
-            totalScore+=1;
+            totalScore += 1;
         if (question2)
-            totalScore+=1;
+            totalScore += 1;
         if (question3)
-            totalScore+=1;
+            totalScore += 1;
         if (question4)
-            totalScore+=1;
+            totalScore += 1;
         if (question5)
-            totalScore+=1;
+            totalScore += 1;
         if (question6)
-            totalScore+=1;
+            totalScore += 1;
 
         return totalScore;
     }
 
-    private void findScoreBoxByID(String idToFind) {
-        String currentEnd = "current end";
-        int idOfScoreBox = getResources().getIdentifier(idToFind,"id", getPackageName());   // Reverse lookup
-        TextView scoreBox = (TextView)findViewById(idOfScoreBox);
-        String currentEndScoreText = "" + currentEnd;
-        scoreBox.setText(currentEndScoreText);          // Set correct scorebox with currentEnd
-    }
-
+    /**
+     * Method to display the number of correct answers in the quiz.  Called when the "Total Score"
+     * button is pressed.  Method calls "calculateScore" and uses the returned "score" in a toast
+     * message.
+     *
+     * @param view
+     */
     public void displayScore(View view) {
+        int finalScore = 0;
 
-        int score = 0;
-        score = calculateScore();
-
-
-        Toast.makeText(MainActivity.this, "Your score is:  " + score,
+        finalScore = calculateScore();
+        Toast.makeText(MainActivity.this, "Your score is:  " + finalScore,
                 Toast.LENGTH_LONG).show();
     }
 }

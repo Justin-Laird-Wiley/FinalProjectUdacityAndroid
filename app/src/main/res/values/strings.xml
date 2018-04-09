@@ -1,3 +1,59 @@
 <resources>
     <string name="app_name">FinalProject</string>
+
+    <!-- Title strings -->
+    <string name="title">Your Massachusetts Trivia Quiz! As seen on stamps!</string>
+    <string name="subtitle">This is a trivia quiz about historical events of
+        Massachusetts in the United States, as depicted on US postage stamps.</string>
+
+    <!-- Question strings -->
+    <string name="questionOne">In what Massachusetts factory city did Jan Matzeliger develop his
+        shoe-lasting machine that transformed the shoe industry?</string>
+    <string name="questionTwo">Emily Dickinson was born and died in what western Massachusetts
+        college town?</string>
+    <string name="questionThree">Robert Goddard successfully tested the first liquid-fueled rocket
+        in 1926 in what central Massachusetts town?</string>
+    <string name="questionFour">Martin Luther King received his doctorate in theology from what
+        Boston area university?</string>
+    <string name="questionFive">Dr. Seuss (Theodore Geisel) was born in 1904 in what Massachusetts
+        city?</string>
+    <string name="questionSix">In 1636, following his exile from Massachusetts, Roger Williams
+        founded a new colony on Narragansett Bay that woiuld become Rhode Island.  Why was he kicked
+        out of Massachusetts?</string>
+
+    <!-- Answer strings -->
+    <!-- question1-->
+    <string name="lawrence">Lawrence</string>
+    <string name="lynn">Lynn</string>
+    <string name="lowell">Lowell</string>
+
+    <!-- question2 -->
+    <string name="amherst">Amherst</string>
+    <string name="northampton">Northampton</string>
+    <string name="south_hadley">South Hadley</string>
+
+    <!-- question3 -->
+    <string name="year_1926">1926</string>
+    <string name="year_1933">1933</string>
+    <string name="year_1940">1940</string>
+    <!-- question4 -->
+    <string name="harvard">Harvard</string>
+    <string name="boston_college">Boston College</string>
+    <string name="boston_university">Boston University</string>
+
+    <!-- question5 -->
+    <string name="springfield">Springfield</string>
+    <string name="worcester">Worcester</string>
+    <string name="pittsfield">Pittsfield</string>
+
+    <!-- question6 -->
+    <string name="plagiarism">Plagiarism</string>
+    <string name="unpaid_taxes">Unpaid taxes</string>
+    <string name="religious_liberty">Disputes over religious liberty</string>
+
+    <!-- Total Score button -->
+    <string name="total_score">Total Score</string>
+
+
+
 </resources>

@@ -49,6 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:src="@drawable/jan_matzeliger" />
 
             <!-- TEXT:  of question1 -->
@@ -57,6 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/jan_matzeliger"
                 android:layout_toRightOf="@id/jan_matzeliger"
                 android:text="@string/questionOne"
                 android:textColor="#000000"
@@ -67,6 +69,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question1"
+                android:layout_toEndOf="@+id/jan_matzeliger"
                 android:layout_toRightOf="@id/jan_matzeliger"
                 android:orientation="vertical">
 
@@ -117,7 +120,9 @@
                 android:id="@+id/emily_dickenson"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:src="@drawable/dickenson" />
 
@@ -128,6 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@+id/emily_dickenson"
+                android:layout_toStartOf="@+id/emily_dickenson"
                 android:text="@string/questionTwo"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -138,6 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question2"
                 android:layout_toLeftOf="@id/emily_dickenson"
+                android:layout_toStartOf="@+id/emily_dickenson"
                 android:orientation="vertical">
 
                 <!-- Amherst -->
@@ -150,6 +157,7 @@
                     android:text="@string/amherst" />
 
                 <!-- Northampton -->
+
                 <RadioButton
                     android:id="@+id/northampton"
                     android:layout_width="wrap_content"
@@ -188,6 +196,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:src="@drawable/goddard" />
 
             <!-- TEXT:  of question3 -->
@@ -256,7 +265,9 @@
                 android:id="@+id/martin_luther_king"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:src="@drawable/mlking" />
 
@@ -267,6 +278,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@id/martin_luther_king"
+                android:layout_toStartOf="@+id/martin_luther_king"
                 android:text="@string/questionFour"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -277,6 +289,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question4"
                 android:layout_toLeftOf="@id/martin_luther_king"
+                android:layout_toStartOf="@+id/martin_luther_king"
                 android:orientation="vertical">
 
                 <!-- Harvard -->
@@ -327,6 +340,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:src="@drawable/seuss" />
 
             <!-- TEXT:  of question5 -->
@@ -394,7 +408,9 @@
                 android:id="@+id/roger_williams"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:src="@drawable/roger_williams" />
 
@@ -405,6 +421,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_toLeftOf="@id/roger_williams"
+                android:layout_toStartOf="@+id/roger_williams"
                 android:text="@string/questionSix"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -415,6 +432,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question6"
                 android:layout_toLeftOf="@id/roger_williams"
+                android:layout_toStartOf="@+id/roger_williams"
                 android:orientation="vertical">
 
                 <!-- Plagarism -->

@@ -3,8 +3,6 @@ package com.example.android.finalproject;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
      * correct answer, and the "else" part will set the boolean to false if either of the
      * incorrect answers are checked.  Called whenever a radio button is clicked.
      *
-     * @param view
+     * @param view of RadioButton that is checked
      */
     public void checkCorrect(View view) {
 
@@ -103,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
      * button is pressed.  Method calls "calculateScore" and uses the returned "score" in a toast
      * message.
      *
-     * @param view
+     * @param view of Button "Total Score"
      */
     public void displayScore(View view) {
-        int finalScore = 0;
+        int finalScore;
 
         finalScore = calculateScore();
         Toast.makeText(MainActivity.this, "Your score is:  " + finalScore,

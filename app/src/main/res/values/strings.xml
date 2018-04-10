@@ -22,6 +22,11 @@
     <string name="questionSix">In 1636, following his exile from Massachusetts, Roger Williams
         founded a new colony on Narragansett Bay that woiuld become Rhode Island.  Why was he kicked
         out of Massachusetts?</string>
+    <string name="questionSeven">What is the building pictured on this stamp celebrating the
+        bicentennial of Massachusetts statehood?</string>
+    <string name="questionEight">The USS Constitution - the oldest commissioned ship in the US Navy - is
+        stationed at the Charlestown Naval Yard in Boston.  She fought her most notable actions
+        during which war?</string>
 
     <!-- Answer strings -->
     <!-- question1-->
@@ -52,6 +57,16 @@
     <string name="plagiarism">Plagiarism</string>
     <string name="unpaid_taxes">Unpaid taxes</string>
     <string name="religious_liberty">Disputes over religious liberty</string>
+    
+    <!-- question7 -->
+    <string name="old_north_church">Old North Church</string>
+    <string name="old_state_house">Old State House</string>
+    <string name="faneuil_hall">Faneuil Hall</string>
+
+    <!-- question8 -->
+    <string name="revolutionary_war">The Revolutionary War</string>
+    <string name="war_1812">The War of 1812</string>
+    <string name="mexican_american_war">The Mexican-American War</string>
 
     <!-- Total Score button -->
     <string name="total_score">Total Score</string>

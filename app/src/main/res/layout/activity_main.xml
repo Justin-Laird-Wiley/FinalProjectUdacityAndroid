@@ -494,11 +494,11 @@
                 android:layout_margin="8dp"
                 android:layout_toEndOf="@+id/statehouse"
                 android:layout_toRightOf="@id/statehouse"
-                android:text="@string/questionOne"
+                android:text="@string/questionSeven"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <!-- Radio group for Question1 answers -->
+            <!-- Radio group for Question7 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -514,7 +514,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="@string/lawrence" />
+                    android:text="@string/old_north_church" />
 
                 <!-- Lynn -->
                 <RadioButton
@@ -523,7 +523,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="@string/lynn" />
+                    android:text="@string/old_state_house" />
 
                 <!-- Lowell -->
                 <RadioButton
@@ -532,7 +532,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="@string/lowell" />
+                    android:text="@string/faneuil_hall" />
             </RadioGroup>
 
         </RelativeLayout>
@@ -558,18 +558,18 @@
                 android:layout_marginStart="8dp"
                 android:src="@drawable/uss_constitution" />
 
-            <!-- TEXT:  of question5 -->
+            <!-- TEXT:  of question8 -->
             <TextView
                 android:id="@+id/question8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ship_constitution"
                 android:layout_margin="8dp"
-                android:text="@string/questionFive"
+                android:text="@string/questionEight"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <!-- Radio group of question5 answers -->
+            <!-- Radio group of question8 answers -->
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -583,7 +583,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="@string/springfield" />
+                    android:text="@string/revolutionary_war" />
 
                 <!-- Worcester -->
                 <RadioButton
@@ -592,7 +592,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="@string/worcester" />
+                    android:text="@string/war_1812" />
 
                 <!-- Pittsfield -->
                 <RadioButton
@@ -601,7 +601,7 @@
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
                     android:onClick="checkCorrect"
-                    android:text="@string/pittsfield" />
+                    android:text="@string/mexican_american_war" />
             </RadioGroup>
 
         </RelativeLayout>

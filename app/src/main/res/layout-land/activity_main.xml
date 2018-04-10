@@ -593,6 +593,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignStart="@+id/question8"
+                android:layout_alignLeft="@+id/question8"
                 android:orientation="vertical">
 
                 <!-- Revolutionary War -->

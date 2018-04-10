@@ -48,8 +48,8 @@
                 android:id="@+id/jan_matzeliger"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:src="@drawable/jan_matzeliger" />
 
@@ -591,9 +591,9 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="258dp"
                 android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/question8"
                 android:layout_alignParentBottom="true"
                 android:layout_alignStart="@+id/question8"
-                android:layout_alignLeft="@+id/question8"
                 android:orientation="vertical">
 
                 <!-- Revolutionary War -->

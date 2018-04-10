@@ -10,6 +10,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * This is the MainActivity class for a quiz app about historical facts of Massachusetts as seen
+ * through US commemorative stamps.  This class runs all the logic that makes the app run.
+ */
 public class MainActivity extends AppCompatActivity {
 
     //  Boolean values for each question:  false for incorrect; true for correct.

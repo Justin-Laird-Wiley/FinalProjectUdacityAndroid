@@ -509,7 +509,7 @@
 
                 <!-- Lawrence -->
                 <RadioButton
-                    android:id="@+id/old_statehouse"
+                    android:id="@+id/old_north_church"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
@@ -518,7 +518,7 @@
 
                 <!-- Lynn -->
                 <RadioButton
-                    android:id="@+id/fanueil_hall"
+                    android:id="@+id/old_state_house"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
@@ -527,7 +527,7 @@
 
                 <!-- Lowell -->
                 <RadioButton
-                    android:id="@+id/haymarket"
+                    android:id="@+id/faneuil_hall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"
@@ -576,7 +576,7 @@
                 android:layout_below="@id/question8"
                 android:orientation="vertical">
 
-                <!-- Springfield -->
+                <!-- Revolutionary War -->
                 <RadioButton
                     android:id="@+id/revolutionary_war"
                     android:layout_width="wrap_content"
@@ -585,7 +585,7 @@
                     android:onClick="checkCorrect"
                     android:text="@string/revolutionary_war" />
 
-                <!-- Worcester -->
+                <!-- War of 1812 -->
                 <RadioButton
                     android:id="@+id/war_of_1812"
                     android:layout_width="wrap_content"
@@ -594,9 +594,9 @@
                     android:onClick="checkCorrect"
                     android:text="@string/war_1812" />
 
-                <!-- Pittsfield -->
+                <!-- Mexican-American War -->
                 <RadioButton
-                    android:id="@+id/barbary_pirates"
+                    android:id="@+id/mexican_american_war"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="@android:color/black"

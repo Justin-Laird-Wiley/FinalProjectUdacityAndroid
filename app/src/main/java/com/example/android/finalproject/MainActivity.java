@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     boolean question4 = false;
     boolean question5 = false;
     boolean question6 = false;
+    boolean question7 = false;
+    boolean question8 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,18 @@ public class MainActivity extends AppCompatActivity {
             question6 = true;
         else if ((view.getId() == R.id.unpaid_taxes) || (view.getId() == R.id.plagarism))
             question6 = false;
+
+        // check question 7
+        if (view.getId() == R.id.old_state_house)
+            question7 = true;
+        else if ((view.getId() == R.id.old_north_church) || (view.getId() == R.id.faneuil_hall))
+            question7 = false;
+
+        // check question 8
+        if (view.getId() == R.id.war_of_1812)
+            question8 = true;
+        else if ((view.getId() == R.id.revolutionary_war) || (view.getId() == R.id.mexican_american_war))
+            question8 = false;
     }
 
     /**
@@ -95,6 +109,10 @@ public class MainActivity extends AppCompatActivity {
         if (question5)
             totalScore += 1;
         if (question6)
+            totalScore += 1;
+        if (question7)
+            totalScore += 1;
+        if (question8)
             totalScore += 1;
 
         return totalScore;

@@ -472,6 +472,147 @@
             android:layout_margin="16dp"
             android:background="@android:color/black" />
 
+        <!-- Question 7:  Mass Statehood -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  Old State House-->
+            <ImageView
+                android:id="@+id/statehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/old_state_house" />
+
+            <!-- TEXT:  of question7 -->
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/statehouse"
+                android:layout_toRightOf="@id/statehouse"
+                android:text="@string/questionOne"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group for Question1 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question7"
+                android:layout_toEndOf="@+id/statehouse"
+                android:layout_toRightOf="@id/statehouse"
+                android:orientation="vertical">
+
+                <!-- Lawrence -->
+                <RadioButton
+                    android:id="@+id/old_statehouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/lawrence" />
+
+                <!-- Lynn -->
+                <RadioButton
+                    android:id="@+id/fanueil_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/lynn" />
+
+                <!-- Lowell -->
+                <RadioButton
+                    android:id="@+id/haymarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/lowell" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- Question 8:  USS Constitution -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--IMAGE:  USS Constitution -->
+            <ImageView
+                android:id="@+id/ship_constitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/uss_constitution" />
+
+            <!-- TEXT:  of question5 -->
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ship_constitution"
+                android:layout_margin="8dp"
+                android:text="@string/questionFive"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Radio group of question5 answers -->
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question8"
+                android:orientation="vertical">
+
+                <!-- Springfield -->
+                <RadioButton
+                    android:id="@+id/revolutionary_war"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/springfield" />
+
+                <!-- Worcester -->
+                <RadioButton
+                    android:id="@+id/war_of_1812"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/worcester" />
+
+                <!-- Pittsfield -->
+                <RadioButton
+                    android:id="@+id/barbary_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/black"
+                    android:onClick="checkCorrect"
+                    android:text="@string/pittsfield" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
         <!-- ButtonView to total score of quiz -->
         <Button
             android:id="@+id/total_button"

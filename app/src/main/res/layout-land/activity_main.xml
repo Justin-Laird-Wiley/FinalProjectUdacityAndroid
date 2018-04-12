@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- TextView:  title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,6 +22,7 @@
             android:textColor="@android:color/black"
             android:textSize="24sp" />
 
+        <!-- TextView:  subtitle (explanatory paragraphs) -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +54,7 @@
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-        <!-- CheckBox:  to comply with the rubric -->
+        <!-- CheckBox:  to comply with the project rubric -->
         <CheckBox
             android:id="@+id/compliance_check_box"
             android:layout_width="wrap_content"
@@ -68,12 +70,14 @@
             android:text="@string/mandatory_check_box"
             android:textSize="16sp" />
 
+        <!-- TextView:  compliance message-->
         <TextView
             android:id="@+id/compliance_message"
-            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="8dp"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 

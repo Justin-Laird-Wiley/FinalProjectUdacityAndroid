@@ -26,8 +26,54 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/subtitle"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/black" />
+
+        <!-- EditText to capture player name -->
+        <EditText
+            android:id="@+id/player_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@android:color/black"
+            android:hint="@string/name_edit_text_hint"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- CheckBox:  to comply with the rubric -->
+        <CheckBox
+            android:id="@+id/compliance_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:buttonTint="@android:color/black"
+            android:onClick="displayComplianceMessage"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/mandatory_check_box"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/compliance_message"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 

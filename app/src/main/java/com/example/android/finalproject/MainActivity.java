@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
@@ -16,8 +18,12 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity {
 
+    //  String variable to hold player name; used in Toast when score displayed.
+    //  Defaults to "Player" if no name is entered.
+    String playerName = "Player";
+
     //  Boolean values for each question:  false for incorrect; true for correct.
-    //  All variables set to false initially.
+    //  All variables initialized to false.
     boolean question1 = false;
     boolean question2 = false;
     boolean question3 = false;
@@ -34,10 +40,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * This method reads the name entered in the EditText view, and reads it into playerName.
+     * Called by displayScore
+     */
+    private void getPlayerName() {
+
+        EditText quizNameTextView = (EditText) findViewById(R.id.player_name_edit_text);
+        playerName = quizNameTextView.getText().toString();
+    }
+
+    /**
+     * This method checks the rubric-compliance CheckBox.  If isChecked() is true, compliance_message
+     * is displayed; if false, the text is set to blank ("").
+     * @param view of CheckBox
+     */
+    public void displayComplianceMessage(View view) {
+
+        //  Find the CheckBox and TextView and create objects for them
+        CheckBox isBoxChecked = (CheckBox) findViewById(R.id.compliance_check_box);
+        TextView complianceDisplayText = (TextView) findViewById(R.id.compliance_message);
+
+        if (isBoxChecked.isChecked()){
+            complianceDisplayText.setText(R.string.compliance_message);
+        } else
+            complianceDisplayText.setText("");
+    }
+
+
+    /**
      * This method performs an "if-else" statement on each question to see if the correct
      * radio button was clicked.  The "if" part will set a boolean value to true for a
      * correct answer, and the "else" part will set the boolean to false if either of the
-     * incorrect answers are checked.  Called whenever a radio button is clicked.
+     * incorrect answers is checked.  Called whenever a radio button is clicked.
      *
      * @param view of RadioButton that is checked
      */
@@ -132,10 +166,12 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(View view) {
         int finalScore;
 
+        getPlayerName();
         //  Call method to calculate number of correct answers
         finalScore = calculateScore();
+
         // Toast to display final score
-        Toast.makeText(MainActivity.this, "Your score is:  " + finalScore,
+        Toast.makeText(MainActivity.this, playerName + ", your score is:  " + finalScore,
                 Toast.LENGTH_LONG).show();
     }
 }
